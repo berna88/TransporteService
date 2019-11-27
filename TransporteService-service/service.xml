@@ -47,4 +47,108 @@
 		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
 		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
 	</entity>
+	<entity local-service="true" name="c_ruta" remote-service="true">
+
+		<!-- PK fields -->
+
+		<!-- Group instance -->
+
+		<!-- Audit fields -->
+
+		<!-- Other fields -->
+
+		<!-- Order -->
+        <column type="int" name="id_ruta" primary="true"></column>
+        <column name="nb_ruta" type="String"></column>
+        <column name="capacidad" type="int"></column>
+        <column name="disponibilidad" type="int"></column>
+        <column name="cl_tipo_ruta" type="String"></column>
+
+		<order by="asc">
+			<order-column name="field1"></order-column>
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="Field2" return-type="Collection">
+			<finder-column name="field2"></finder-column>
+		</finder>
+
+
+		<!-- PK fields -->
+
+		<!-- Group instance -->
+
+		<!-- Audit fields -->
+	</entity>
+	<entity local-service="true" name="c_parada" remote-service="true">
+
+		<!-- PK fields -->
+
+		<!-- Group instance -->
+
+		<!-- Audit fields -->
+
+		<!-- Other fields -->
+
+		<!-- Order -->
+        <column name="id_parada" type="int" primary="true"></column>
+        <column name="nb_parada" type="String"></column>
+        <column name="ds_parada" type="String"></column>
+        <column name="horario" type="String"></column>
+        <column name="idruta" type="int"></column>
+        <column name="url_imagen" type="String"></column>
+
+		<order by="asc">
+			<order-column name="field1"></order-column>
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="Field2" return-type="Collection">
+			<finder-column name="field2"></finder-column>
+		</finder>
+	</entity>
+	<entity local-service="true" name="c_usuario"
+		remote-service="true">
+
+		<!-- PK fields -->
+
+		<!-- Group instance -->
+
+		<!-- Audit fields -->
+
+		<!-- Other fields -->
+
+		<!-- Order -->
+		<column name="no_empleado" primary="true" type="int"></column>
+		<column name="telefono" type="String"></column>
+
+		<order by="asc">
+			<order-column name="field1"></order-column>
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="Field2" return-type="Collection">
+			<finder-column name="field2"></finder-column>
+		</finder>
+
+
+		<!-- PK fields -->
+
+		<column name="c_usuarioId" primary="true" type="long"></column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long"></column>
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="userName" type="String"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+	</entity>
 </service-builder>
