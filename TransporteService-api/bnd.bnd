@@ -1,0 +1,10 @@
+Bundle-Name: TransporteService-api
+Bundle-SymbolicName: com.consistent.transporte.service.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.consistent.transporte.service.exception,\
+	com.consistent.transporte.service.model,\
+	com.consistent.transporte.service.service,\
+	com.consistent.transporte.service.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../TransporteService-service/service.xml
