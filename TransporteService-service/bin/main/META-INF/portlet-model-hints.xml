@@ -1,19 +1,18 @@
 <?xml version="1.0"?>
 
 <model-hints>
-	<model name="com.consistent.transporte.service.model.Foo">
-		<field name="uuid" type="String" />
-		<field name="fooId" type="long" />
-		<field name="groupId" type="long" />
-		<field name="companyId" type="long" />
-		<field name="userId" type="long" />
-		<field name="userName" type="String" />
-		<field name="createDate" type="Date" />
-		<field name="modifiedDate" type="Date" />
-		<field name="field1" type="String" />
-		<field name="field2" type="boolean" />
-		<field name="field3" type="int" />
-		<field name="field4" type="Date" />
-		<field name="field5" type="String" />
+	<model name="com.consistent.transporte.service.model.Alumnos">
+		<field name="matricula" type="int" />
+		<field name="nombre" type="String" />
+		<field name="apellido" type="String" />
+		<field name="grupoId" type="int" />
+	</model>
+	<model name="com.consistent.transporte.service.model.Edificio">
+		<field name="edificioId" type="int" />
+		<field name="nombre" type="String" />
+	</model>
+	<model name="com.consistent.transporte.service.model.Grupos">
+		<field name="grupoId" type="int" />
+		<field name="nombre" type="String" />
 	</model>
 </model-hints>

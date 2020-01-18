@@ -1,15 +1,16 @@
-create table FOO_Foo (
-	uuid_ VARCHAR(75) null,
-	fooId LONG not null primary key,
-	groupId LONG,
-	companyId LONG,
-	userId LONG,
-	userName VARCHAR(75) null,
-	createDate DATE null,
-	modifiedDate DATE null,
-	field1 VARCHAR(75) null,
-	field2 BOOLEAN,
-	field3 INTEGER,
-	field4 DATE null,
-	field5 VARCHAR(75) null
+create table Escuela_Alumnos (
+	matricula INTEGER not null primary key,
+	nombre VARCHAR(75) null,
+	apellido VARCHAR(75) null,
+	grupoId INTEGER
+);
+
+create table Escuela_Edificio (
+	edificioId INTEGER not null primary key,
+	nombre VARCHAR(75) null
+);
+
+create table Escuela_Grupos (
+	grupoId INTEGER not null primary key,
+	nombre VARCHAR(75) null
 );
